@@ -17,7 +17,7 @@ public class Gestorebrani {
     public void ListaBrani(){
         StringBuilder stbui= new StringBuilder();
         for(Brano Brv : listaBrani){
-            stbui.append(Brv.toString())
+            stbui.append(Brv.toString());
         }
     }
 
