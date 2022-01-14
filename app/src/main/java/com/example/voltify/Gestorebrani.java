@@ -14,5 +14,11 @@ public class Gestorebrani {
         Brano b= new Brano(titolo,durata);
         listaBrani.add(b);
     }
+    public void ListaBrani(){
+        StringBuilder stbui= new StringBuilder();
+        for(Brano Brv : listaBrani){
+            stbui.append(Brv.toString())
+        }
+    }
 
 }

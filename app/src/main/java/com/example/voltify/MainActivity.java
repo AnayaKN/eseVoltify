@@ -2,6 +2,7 @@ package com.example.voltify;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +14,7 @@ EditText txtTitolo;
 Gestorebrani gb;
 Button btnInvia;
 EditText txtDurata;
+Intent i;
 
 
     @Override
@@ -25,6 +27,7 @@ EditText txtDurata;
         btnInvia = (Button) findViewById(R.id.btnInvia);
         txtDurata =(EditText)findViewById(R.id.txtDurata);
         gb=new Gestorebrani();
+
 
 
         btnInserisci.setOnClickListener(new View.OnClickListener() {
