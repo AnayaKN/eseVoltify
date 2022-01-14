@@ -11,7 +11,9 @@ public class MainActivity extends AppCompatActivity {
 Button btnInserisci;
 EditText txtTitolo;
 Gestorebrani gb;
-Button btn
+Button btnInvia;
+EditText txtDurata;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +22,15 @@ Button btn
 
         btnInserisci = (Button)findViewById(R.id.btnInserisci);
         txtTitolo = (EditText) findViewById(R.id.txtTitolo);
+        btnInvia = (Button) findViewById(R.id.btnInvia);
+        txtDurata =(EditText)findViewById(R.id.txtDurata);
+        gb=new Gestorebrani();
+
 
         btnInserisci.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gb.addBrano();
+                gb.addBrano(txtTitolo.getText().toString(),Integer.parseInt(txtDurata.getText().toString()));
             }
         });
     }
